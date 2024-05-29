@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "qopenglfunctions_3_2_core": "cpp",
+        "qopenglfunctions_4_0_core": "cpp",
+        "qopenglfunctions_3_1": "cpp",
+        "qopenglfunctions_3_2_compatibility": "cpp"
+    }
+}

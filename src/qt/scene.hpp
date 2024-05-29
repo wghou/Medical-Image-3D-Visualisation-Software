@@ -12,9 +12,11 @@
 #include "legacy/viewer_structs.hpp"
 // Qt headers :
 #include <QOpenGLDebugLogger>
-#include <QOpenGLFunctions_3_2_Core>
-#include <QOpenGLFunctions_4_0_Compatibility>
-#include <QOpenGLFunctions_4_0_Core>
+#include <qopenglfunctions.h>
+#include <QOpenGLFunctions_3_1>
+//#include <QOpenGLFunctions_3_2_Core>
+//#include <QOpenGLFunctions_4_0_Compatibility>
+//#include <QOpenGLFunctions_4_0_Core>
 #include <QProgressBar>
 #include <QStatusBar>
 // libQGLViewer :
@@ -98,7 +100,7 @@ enum ColorFunction {
 /**********************************************************************/
 /**********************************************************************/
 
-class Scene : public QObject, public QOpenGLFunctions_3_2_Core {
+class Scene : public QObject, public QOpenGLFunctions_3_1 {
     Q_OBJECT
 
 public:

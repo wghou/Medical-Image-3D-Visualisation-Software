@@ -8,8 +8,9 @@
 #include <QOpenGLContext>
 #include <QOpenGLExtraFunctions>
 #include <QOpenGLFunctions>
-#include <QOpenGLFunctions_3_2_Compatibility>
-#include <QOpenGLFunctions_3_2_Core>
+#include <QOpenGLFunctions_3_1>
+//#include <QOpenGLFunctions_3_2_Compatibility>
+//#include <QOpenGLFunctions_3_2_Core>
 
 class SceneGL;
 

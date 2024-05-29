@@ -4,10 +4,11 @@
 #include "../../qt/legacy/viewer_structs.hpp"
 
 #include <QOpenGLContext>
-#include <QOpenGLFunctions_3_2_Core>
-#include <QOpenGLFunctions_3_2_Compatibility>
-#include <QOpenGLFunctions_4_0_Compatibility>
-#include <QOpenGLFunctions_4_0_Core>
+#include <QOpenGLFunctions_3_1>
+//#include <QOpenGLFunctions_3_2_Core>
+//#include <QOpenGLFunctions_3_2_Compatibility>
+//#include <QOpenGLFunctions_4_0_Compatibility>
+//#include <QOpenGLFunctions_4_0_Core>
 
 class SceneGL;
 class GraphMesh;
