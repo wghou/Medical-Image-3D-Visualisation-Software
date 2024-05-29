@@ -5,9 +5,10 @@
 #include "glm/gtx/string_cast.hpp"
 
 #include <QOpenGLContext>
-#include <QOpenGLFunctions_3_2_Core>
-#include <QOpenGLFunctions_4_0_Compatibility>
-#include <QOpenGLFunctions_4_0_Core>
+#include <QOpenGLFunctions_3_1>
+//#include <QOpenGLFunctions_3_2_Core>
+//#include <QOpenGLFunctions_4_0_Compatibility>
+//#include <QOpenGLFunctions_4_0_Core>
 
 class SceneGL;
 

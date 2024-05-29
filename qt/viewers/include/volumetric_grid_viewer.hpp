@@ -6,7 +6,8 @@
 
 #include "./viewer_structs.hpp"
 
-#include <QOpenGLFunctions_3_2_Core>
+#include <QOpenGLFunctions_3_1>
+//#include <QOpenGLFunctions_3_2_Core>
 #include <memory>
 #include <vector>
 

@@ -15,9 +15,10 @@
 #include "./viewer_structs.hpp"
 // Qt headers :
 #include <QOpenGLDebugLogger>
-#include <QOpenGLFunctions_3_2_Core>
-#include <QOpenGLFunctions_4_0_Compatibility>
-#include <QOpenGLFunctions_4_0_Core>
+#include <QOpenGLFunctions_3_1>
+//#include <QOpenGLFunctions_3_2_Core>
+//#include <QOpenGLFunctions_4_0_Compatibility>
+//#include <QOpenGLFunctions_4_0_Core>
 #include <QProgressBar>
 #include <QStatusBar>
 // libQGLViewer :
@@ -136,7 +137,7 @@ enum InfoToSend {
 /**********************************************************************/
 /**********************************************************************/
 
-class SceneGL : public QOpenGLFunctions_3_2_Core {
+class SceneGL : public QOpenGLFunctions_3_1 {
 public:
 	SceneGL();
 	~SceneGL(void);
@@ -171,7 +172,7 @@ struct Demos {
 /// @details This class evolved from a simple scene representation at the start to a nearly all-encompassing OpenGL
 /// gateway for any and all operations. It should be <b><i>heavily</i></b> refactored.
 /// @warning Spaghetti code ahead.
-class Scene : public QObject, public QOpenGLFunctions_3_2_Core {
+class Scene : public QObject, public QOpenGLFunctions_3_1 {
     Q_OBJECT
 	/// @brief typedef to omit glm:: from a 'uvec3'
 	typedef glm::uvec3 uvec3;

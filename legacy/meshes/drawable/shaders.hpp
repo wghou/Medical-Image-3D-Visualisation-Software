@@ -2,10 +2,11 @@
 #define VISUALISATION_SHADERS_HPP
 
 #include <QOpenGLFunctions>
-#include <QOpenGLFunctions_3_2_Compatibility>
-#include <QOpenGLFunctions_3_2_Core>
-#include <QOpenGLFunctions_4_0_Compatibility>
-#include <QOpenGLFunctions_4_0_Core>
+#include <QOpenGLFunctions_3_1>
+//#include <QOpenGLFunctions_3_2_Compatibility>
+//#include <QOpenGLFunctions_3_2_Core>
+//#include <QOpenGLFunctions_4_0_Compatibility>
+//#include <QOpenGLFunctions_4_0_Core>
 #include <QOpenGLVersionFunctions>
 
 #include <algorithm>
@@ -13,7 +14,7 @@
 
 class ShaderCompiler {
 public:
-	typedef QOpenGLFunctions_3_2_Core GLFunctions;
+	typedef QOpenGLFunctions_3_1 GLFunctions;
 	using PragmaReplacement = std::pair<std::string, std::string>;
 
 public:
