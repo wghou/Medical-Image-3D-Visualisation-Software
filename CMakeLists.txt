@@ -193,6 +193,7 @@ TARGET_LINK_LIBRARIES(neighbor_visu
     PUBLIC SuiteSparse
     PUBLIC OpenMP::OpenMP_CXX
 )
+message("wghou: " ${OPENGL_LIBRARIES})
 
 option(RELEASE_WITH_ASSERT "Build a release version with assert" OFF)
 if(RELEASE_WITH_ASSERT)

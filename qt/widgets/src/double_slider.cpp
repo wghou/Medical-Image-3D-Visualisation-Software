@@ -46,7 +46,7 @@ DoubleSlider::DoubleSlider(QWidget* parent) :
 	QObject::connect(this->value_slider, &RangeSlider::minimumValueChanged, this, &DoubleSlider::updateLabels);
 	QObject::connect(this->value_slider, &RangeSlider::maximumValueChanged, this, &DoubleSlider::updateLabels);
 
-	this->setMin(INT_MAX);
+	this->setMin(INT_MIN);
 	this->setMax(INT_MAX);
 	this->setMinValue(0);
 	this->setMaxValue(65535);
